@@ -1,0 +1,145 @@
+{% extends "base.html" %}
+
+{% block title %}Bluetooth Attendance Tracking for Universities{% endblock %}
+
+{% block content %}
+<section class="hero">
+  <div class="container hero-grid">
+    <div class="hero-text">
+      <div class="hero-pill">Modern Classroom Technology</div>
+      <h1 class="hero-title">
+        Bluetooth-Powered Attendance Tracking for Universities
+      </h1>
+      <p class="hero-subtitle">
+        Eliminate manual roll calls and streamline classroom management with
+        automated Bluetooth device detection. Fast, accurate, and effortless.
+      </p>
+
+      <div class="hero-buttons">
+        <a href="{{ url_for('auth') }}" class="btn-primary">
+          Lecturer Portal
+        </a>
+        <a href="{{ url_for('checkin') }}" class="btn-outline">
+          Student Check-In
+        </a>
+      </div>
+
+      <div class="hero-badges">
+        <span>✓ No App Required</span>
+        <span>✓ Web-Based</span>
+        <span>✓ Instant Reports</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="features" class="section">
+  <div class="container">
+    <h2 class="section-title">Everything You Need for Efficient Attendance</h2>
+    <p class="section-subtitle">
+      A complete solution designed for modern educational institutions
+    </p>
+
+    <div class="card-grid">
+      <article class="feature-card">
+        <h3>Lightning Fast Scanning</h3>
+        <p>
+          Take attendance for an entire class in seconds using Bluetooth device
+          detection. No more wasting precious lecture time on manual roll calls.
+        </p>
+      </article>
+
+      <article class="feature-card">
+        <h3>Student Database</h3>
+        <p>
+          Centralized student record management with device identifiers,
+          attendance history, and complete profile information all in one place.
+        </p>
+      </article>
+
+      <article class="feature-card">
+        <h3>Export Reports</h3>
+        <p>
+          Generate professional attendance reports in multiple formats: PDF for
+          printing, Excel for analysis, and CSV for data integration.
+        </p>
+      </article>
+
+      <article class="feature-card">
+        <h3>Course Management</h3>
+        <p>
+          Organize multiple courses, track sessions over time, and maintain
+          detailed records for each class throughout the semester.
+        </p>
+      </article>
+
+      <article class="feature-card">
+        <h3>Secure &amp; Private</h3>
+        <p>
+          Built with security in mind. All data is encrypted and access is
+          controlled with role-based authentication for lecturers and students.
+        </p>
+      </article>
+
+      <article class="feature-card">
+        <h3>Mobile-Friendly</h3>
+        <p>
+          Works seamlessly on any device. Students check in from their phones
+          and lecturers manage attendance from laptops or tablets.
+        </p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="how-it-works" class="section section-alt">
+  <div class="container">
+    <h2 class="section-title">Simple Process, Powerful Results</h2>
+    <p class="section-subtitle">
+      Get started in minutes with our intuitive workflow
+    </p>
+
+    <div class="process-grid">
+      <div class="process-column">
+        <h3>For Lecturers</h3>
+        <ol>
+          <li><strong>Set Up Your Courses</strong> – create courses, add students and link device identifiers.</li>
+          <li><strong>Start a Session</strong> – open the attendance page, select your course and click “Take Attendance”.</li>
+          <li><strong>Scan &amp; Review</strong> – the system detects student devices and marks attendance automatically.</li>
+          <li><strong>Export Reports</strong> – download attendance in PDF, Excel or CSV with a single click.</li>
+        </ol>
+      </div>
+
+      <div class="process-column">
+        <h3>For Students</h3>
+        <ol>
+          <li><strong>Enable Bluetooth</strong> – turn on Bluetooth on your phone before entering class.</li>
+          <li><strong>Open Check-In Page</strong> – visit the student check-in page on your phone’s browser.</li>
+          <li><strong>Enter Your Details</strong> – type your student number and tap “Start Broadcasting”.</li>
+          <li><strong>Stay Connected</strong> – keep the page open so your attendance can be recorded.</li>
+        </ol>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="benefits" class="section section-cta">
+  <div class="container cta-card">
+    <div>
+      <h2 class="section-title">Ready to Modernize Your Classroom?</h2>
+      <p class="section-subtitle">
+        Join universities using Bluetooth technology for efficient attendance
+        tracking.
+      </p>
+    </div>
+    <div class="hero-buttons">
+      <a href="{{ url_for('auth') }}" class="btn-primary">
+        Get Started as Lecturer
+      </a>
+      <a href="{{ url_for('checkin') }}" class="btn-outline">
+        Student Check-In
+      </a>
+    </div>
+  </div>
+</section>
+{% endblock %}
