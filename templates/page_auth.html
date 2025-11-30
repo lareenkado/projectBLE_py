@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block title %}Attendance System – Sign In{% endblock %}
+
+{% block content %}
+<section class="center-page">
+  <div class="auth-card">
+    <div class="auth-icon">🔵</div>
+    <h1 class="auth-title">Attendance System</h1>
+    <p class="auth-subtitle">
+      Bluetooth-based class attendance tracking
+    </p>
+
+    <div class="auth-tabs">
+      <button class="auth-tab active">Sign In</button>
+      <button class="auth-tab disabled">Sign Up</button>
+    </div>
+
+    <form class="auth-form">
+      <label class="field-label" for="email">Email</label>
+      <input
+        id="email"
+        type="email"
+        class="field-input"
+        placeholder="lecturer@university.edu"
+      />
+
+      <label class="field-label" for="password">Password</label>
+      <input
+        id="password"
+        type="password"
+        class="field-input"
+        placeholder="••••••••"
+      />
+
+      <button type="submit" class="btn-primary full-width">Sign In</button>
+    </form>
+  </div>
+</section>
+{% endblock %}
