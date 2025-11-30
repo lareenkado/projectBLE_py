@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% block title %}Attendance Dashboard{% endblock %}
+
+{% block content %}
+<section class="dashboard">
+  <div class="container">
+    <header class="dashboard-header">
+      <h1>Attendance System</h1>
+      <button class="btn-outline small">Sign Out</button>
+    </header>
+
+    <p class="dashboard-subtitle">
+      Welcome back, prof loay! Manage your classes and track attendance with
+      ease.
+    </p>
+
+    <div class="stats-grid">
+      <div class="stats-card">
+        <div class="stats-label">Total Students</div>
+        <div class="stats-value">0</div>
+      </div>
+      <div class="stats-card">
+        <div class="stats-label">Active Courses</div>
+        <div class="stats-value">0</div>
+      </div>
+      <div class="stats-card">
+        <div class="stats-label">Total Sessions</div>
+        <div class="stats-value">0</div>
+      </div>
+    </div>
+
+    <div class="dashboard-grid">
+      <section class="panel">
+        <h2>Quick Actions</h2>
+        <p class="panel-subtitle">
+          Common tasks for managing attendance
+        </p>
+
+        <div class="quick-actions">
+          <button class="quick-action active">Take Attendance</button>
+          <button class="quick-action">Manage Students</button>
+          <button class="quick-action">Manage Courses</button>
+        </div>
+      </section>
+
+      <section class="panel">
+        <h2>Getting Started</h2>
+        <p class="panel-subtitle">
+          Set up your attendance system
+        </p>
+
+        <ol class="steps-list">
+          <li>
+            <strong>Add Students</strong><br />
+            Register students with their device identifiers
+          </li>
+          <li>
+            <strong>Create Courses</strong><br />
+            Set up your courses and class schedules
+          </li>
+          <li>
+            <strong>Take Attendance</strong><br />
+            Use Bluetooth scanning during class sessions
+          </li>
+        </ol>
+      </section>
+    </div>
+  </div>
+</section>
+{% endblock %}
