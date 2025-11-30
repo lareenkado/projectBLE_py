@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>{% block title %}Bluetooth Attendance System{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Bluetooth-powered attendance tracking for universities"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/main.css') }}"
+    />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="{{ url_for('home') }}" class="logo-row">
+          <div class="logo-circle">🔵</div>
+          <div class="logo-text">
+            <div class="logo-title">Bluetooth Attendance</div>
+            <div class="logo-subtitle">
+              Modern classroom attendance tracking
+            </div>
+          </div>
+        </a>
+
+        <nav class="main-nav">
+          <a href="{{ url_for('home') }}#features">Features</a>
+          <a href="{{ url_for('home') }}#how-it-works">How It Works</a>
+          <a href="{{ url_for('home') }}#benefits">Benefits</a>
+          <a href="{{ url_for('auth') }}" class="nav-cta">Get Started</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      {% block content %}{% endblock %}
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo-row">
+            <div class="logo-circle small">🔵</div>
+            <span class="footer-product-name">Bluetooth Attendance</span>
+          </div>
+          <p class="footer-text">
+            Modern classroom attendance tracking powered by Bluetooth
+            technology. Fast, accurate and effortless.
+          </p>
+        </div>
+
+        <div class="footer-col">
+          <h4>Product</h4>
+          <a href="{{ url_for('home') }}#features">Features</a>
+          <a href="{{ url_for('home') }}#how-it-works">How It Works</a>
+          <a href="{{ url_for('home') }}#benefits">Benefits</a>
+          <a href="#">FAQ</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Access</h4>
+          <a href="{{ url_for('auth') }}">Lecturer Login</a>
+          <a href="{{ url_for('checkin') }}">Student Check-In</a>
+          <a href="{{ url_for('dashboard') }}">Dashboard</a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Support</h4>
+          <a href="mailto:support@btattendance.edu"
+            >support@btattendance.edu</a
+          >
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        ©️ 2024 Bluetooth Attendance System. Built with modern web technologies
+        for educational institutions.
+      </div>
+    </footer>
+  </body>
+</html>
