@@ -1,6 +1,12 @@
 from flask import Flask, render_template
-app = Flask(__name__)
-@app.route("/")
+
+app = Flask(
+    __name__,
+    static_folder="static",
+    static_url_path="/static",
+    template_folder="templates",
+)
+
 @app.route("/")
 def home():
     return render_template("page_home.html")
@@ -16,5 +22,6 @@ def checkin():
 @app.route("/dashboard")
 def dashboard():
     return render_template("page_dashboard.html")
+
 if __name__ == "__main__":
     app.run(debug=True)
