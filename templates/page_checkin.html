@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% block title %}Student Check-In{% endblock %}
+
+{% block content %}
+<section class="center-page">
+  <div class="checkin-card">
+    <div class="auth-icon">🔵</div>
+    <h1 class="auth-title">Student Check-In</h1>
+    <p class="auth-subtitle">
+      Make yourself visible for attendance tracking
+    </p>
+
+    <form class="auth-form">
+      <label class="field-label" for="studentNumber">Student Number</label>
+      <input
+        id="studentNumber"
+        type="text"
+        class="field-input"
+        placeholder="e.g., STU12345"
+      />
+
+      <div class="how-it-works-box">
+        <h3>How it works:</h3>
+        <ol>
+          <li>Enter your student number</li>
+          <li>Turn on Bluetooth on your phone</li>
+          <li>Tap “Start Broadcasting”</li>
+          <li>Stay in the classroom during scanning</li>
+        </ol>
+      </div>
+
+      <button type="submit" class="btn-primary full-width">
+        Start Broadcasting
+      </button>
+
+      <p class="checkin-help">
+        Having trouble? Make sure Bluetooth permissions are enabled in your
+        browser settings.
+      </p>
+    </form>
+  </div>
+</section>
+{% endblock %}
